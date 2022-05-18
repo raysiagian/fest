@@ -9,7 +9,7 @@
 
 ## Create With Laravel
 
-This website is mate by student for their project task. This website is an Fest Web.
+This website iscreated by student for their project task. This website is an Fest Web.
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
