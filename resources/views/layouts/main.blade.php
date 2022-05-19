@@ -48,6 +48,7 @@
 
   <section class="our-courses" id="courses">
    @yield('cardsrow')
+   @yield('list_event')
     @yield('buttonback')
   </section>
 <div>
