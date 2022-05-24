@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PhotoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -73,13 +73,13 @@ Route::get('/', function () {
     ]);
   });
   
+
   Route::get('/event', function () {
     return view('event', [
       "tittle" => "Event"
     ]);
   });
 
-  
   Route::get('/faq', function () {
     return view('faq', [
       "tittle" => "FAQ"
@@ -89,5 +89,18 @@ Route::get('/', function () {
   Route::get('/media', function () {
     return view('media', [
       "tittle" => "Media"
+    ]);
+  });
+
+  
+  Route::get('/post', function () {
+    return view('post', [
+      "tittle" => "Event"
+    ]);
+  });
+
+  Route::get('/content', function () {
+    return view('content', [
+      "tittle" => "Content"
     ]);
   });

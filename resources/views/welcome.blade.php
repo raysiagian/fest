@@ -18,18 +18,7 @@
           <div class="section-heading">
             <h2>Upcoming Event</h2>
           </div>
-          <div class="container">
-            <div class="row justify-content-center mb-3">
-                <div class="col-md-6">
-                    <form action="/">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Search" name="search">
-                            <button class="btn btn-outline-secondary" type="submit" >Search</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+          
     </div>
         <div class="col-lg-4">
           <div class="categories">

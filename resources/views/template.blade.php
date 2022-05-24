@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ config('app.name') }}</title>
+    <title>admin</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +13,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Admin</a>
+                <a class="navbar-brand" href="/admin">Admin</a>
                 <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>

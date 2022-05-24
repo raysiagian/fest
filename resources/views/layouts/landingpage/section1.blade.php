@@ -15,7 +15,7 @@
             
             <div class="item">
               <div class="down-content">
-                  <a class="text-reset" href="/event"><h4 class="mb-5">Event</h4></a>
+                  <a class="text-reset" href="/content"><h4 class="mb-5">Event</h4></a>
                 <p>List Kegiatan, lokasi serta hal menarik lainnya pada FLB.</p>
               </div>
             </div>
@@ -23,7 +23,7 @@
             <div class="item">
               <div class="down-content">
                 <a class="text-reset" href="/media"><h4 class="mb-5">Media</h4></a>
-                <p>Media yang mengabarkan info terbaru tentnag festival.</p>
+                <p>Media yang mengabarkan info terbaru tentang festival.</p>
               </div>
             </div>
             
