@@ -1,4 +1,4 @@
 <h1>
-proyek Sederhana website Festival
+proyek Sederhana Website Festival
 </h1>
 Tugas Project Akhir 1
