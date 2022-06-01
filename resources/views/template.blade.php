@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/trix.css')}}">
+    <script type="text/javascript" src="{{asset('assets/js/trix.js')}}"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -18,21 +19,27 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="my-nav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto">   
                         @guest('admin')
                         <li class="nav-item">
                             <a href="{{ route('admin.login') }}" class="nav-link">Login</a>
                         </li>
                         @else
+                        <li class="nav-item">
+                            <a href="/admin" class="nav-link">Dasboard</a>
+                        </li>
                         @can('role',['admin','editor'])
                             <li class="nav-item">
-                                <a href="{{ route('post') }}" class="nav-link">Data Post</a>
+                                <a href="{{route('post.index')}}" class="nav-link">Data Post</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('pembicara.index')}}" class="nav-link">Data Pembicara</a>
                             </li>
                         @endcan
                         @can('role','admin')
-                            <li class="nav-item">
+                          {{--   <li class="nav-item">
                                 <a href="{{ route('admin') }}" class="nav-link">Data Admin</a>
-                            </li>
+                            </li> --}}
                         @endcan
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link" data-toggle="dropdown">{{ Auth::user()->name }}</a>
@@ -51,9 +58,9 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
+        
         @yield('content')
-        </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

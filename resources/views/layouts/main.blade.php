@@ -34,7 +34,7 @@
               <div class="col-lg-12">
                 <div class="caption">
                     @yield('container')
-          </div>
+                </div>
               </div>
             </div>
           </div>
@@ -46,10 +46,8 @@
 
 @yield('container2')
 
-  <section class="our-courses" id="courses">
-   @yield('cardsrow')
-   @yield('list_event')
-    @yield('buttonback')
+  <section >
+
   </section>
 <div>
   @yield('container4')

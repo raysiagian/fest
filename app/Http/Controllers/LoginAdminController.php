@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 
+
 class LoginAdminController extends Controller
 {
     public function __construct()

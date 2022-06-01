@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\ContentController;
+use App\Models\Pembicara;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,15 +25,18 @@ Route::group([
     Route::middleware(['auth:admin'])->group(function () {
         Route::post('logout','LoginAdminController@logout')->name('admin.logout');
         Route::view('/','dashboard')->name('dashboard');
-        Route::view('/post','data-post')->name('post')->middleware('can:role,"admin","editor"');
-        Route::view('/admin','data-admin')->name('admin')->middleware('can:role,"admin"');
+        Route::resource('/post' ,  DashboardContentController::class)->middleware('can:role,"admin","editor"');
+        Route::resource('/pembicara' ,  PembicaraController::class)->middleware('can:role,"admin","editor"');
+
+        
+        Route::view('/admin','data-admin')->name('admin')->middleware(['can:role', 'admin','editor']);
     });
 });
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
 });
-
+ */
 # routing untuk homepage
 Route::get('/', function () {
 
@@ -55,6 +60,12 @@ Route::get('/', function () {
   Route::get('/about', function () {
     return view('about',[
       "tittle" => "About"
+    ]);
+  });
+  Route::get('/pembicara', function () {
+    return view('pembicara',[
+      "tittle" => "Pembicara",
+      "pembicara" => Pembicara::all()
     ]);
   });
   
@@ -93,14 +104,14 @@ Route::get('/', function () {
   });
 
   
-  Route::get('/post', function () {
-    return view('post', [
-      "tittle" => "Event"
-    ]);
-  });
 
-  Route::get('/content', function () {
+
+/*   Route::get('/content', function () {
     return view('content', [
       "tittle" => "Content"
     ]);
-  });
+  }); */
+ Route::get('/content', [ContentController::class,'index']);
+
+
+ 
