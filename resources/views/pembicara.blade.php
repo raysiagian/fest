@@ -7,10 +7,6 @@
 @endsection
 
 
-@section('section1')
-@include('layouts.landingpage.section1')
-@endsection
-
 @section('container4')
 <section class="our-courses">
 <div class="container ">
@@ -30,8 +26,11 @@
             <div class="card-body">
               <h5 class="card-title">{{$item['name']}}</h5>
               <p class="text mb-3">
-                {!!$item['description']!!}
-            </p>
+                <div class="trix-content">
+                    {!!$item['description']!!}
+                </div>
+             
+              </p>
             </div>
           </div>
          </div>

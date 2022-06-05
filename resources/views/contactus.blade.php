@@ -2,8 +2,8 @@
 
 
 @section('container')
-<h6>About Us</h6>
-<h2>Tentang Festival Literasi Balige</h2>
+<h6>Contact Us</h6>
+<h2>Social Media</h2>
 @endsection
 
 
