@@ -45,6 +45,14 @@
             {{$message}}
           </p>
           @enderror
+          {{-- <label for="description">Description</label>
+          @csrf
+          <textarea id="description" name="description"></textarea>
+          @error('description')
+          <p class="text-danger">
+            {{$message}}
+          </p>
+          @enderror --}}
         </div>
         <button type="submit" class="btn btn-primary">Create Post</button>
     </form>

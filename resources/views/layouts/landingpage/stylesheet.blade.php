@@ -9,4 +9,15 @@
     <link rel="stylesheet" href="{{asset('assets/css/lightbox.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/trix.css')}}">
     <script type="text/javascript" src="{{asset('assets/js/trix.js')}}"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/<version>/classic/ckeditor.js"></script>
+        <script src {{asset('assets/ckeditor/ckeditor.js')}}></script>
+        <script>
+            ClassicEditor
+                .create( document.querySelector( '#description' ) )
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
+         <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <!--

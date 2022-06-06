@@ -58,15 +58,19 @@
         @endif
       </div>
       <div class="container">
-        <p class="text mb-3">
-            {!!$item['description']!!}
-        </p>
+        <div id="description">
+          <div id="description">
+   
+              {!!$item['description']!!}
+            </div>
+        </div>
       </div>
       
       
     </div>
    @endforeach 
 </div>
+
    <div class="div d-flex justify-content-center">
     {{$content->links()}}
    </div>

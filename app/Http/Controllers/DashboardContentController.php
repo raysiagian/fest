@@ -43,9 +43,9 @@ class DashboardContentController extends Controller
         /* return $request->file('image')->store('content-images'); */
        /*  dd($request->file('image')); */
         $validateData = $request->validate([
-        'title' => 'required|max:255',
+       'title' => 'required|max:255',
         'image' => 'image|file|max:5120',
-        'video' => 'file|mimes:mp4,mkv',
+        'video' => 'file|mimes:mp4,mkv', 
         'description' => 'required'
         ]);
 
@@ -55,8 +55,7 @@ class DashboardContentController extends Controller
         if($request->file('video')){
             $validateData['video'] = $request->file('video')->store('content-video');
         }
-
-        $validateData['description'] = (strip_tags($request->description));
+    // $validateData['description'] = (strip_tags($request->description)); 
 
 
       Content::create($validateData);

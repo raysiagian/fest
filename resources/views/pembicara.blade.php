@@ -25,12 +25,14 @@
             <img class="card-img-top" src="{{asset('storage/' . $item->image)}}">
             <div class="card-body">
               <h5 class="card-title">{{$item['name']}}</h5>
-              <p class="text mb-3">
-                <div class="trix-content">
-                    {!!$item['description']!!}
+              <div class="container">
+                <div id="description">
+                  <div id="description">
+           
+                      {!!$item['description']!!}
+                    </div>
                 </div>
-             
-              </p>
+              </div>
             </div>
           </div>
          </div>

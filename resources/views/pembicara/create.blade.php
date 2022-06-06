@@ -36,7 +36,14 @@
             {{$message}}
           </p>
           @enderror
-        </div>
+          {{-- <label for="description">Description</label>
+          @csrf
+          <textarea id="description" name="description"></textarea>
+          @error('description')
+          <p class="text-danger">
+            {{$message}}
+          </p>
+          @enderror --}}
         <button type="submit" class="btn btn-primary">Create Pembicara</button>
     </form>
 </div>
