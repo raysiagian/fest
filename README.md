@@ -40,6 +40,5 @@ Cara penggunaan Website Laravel Festival:
     <li>
 	 php artisan serve
     </li>
-    <li>
     </ol>
 3. buka browser anda kemudian masukkan link: http://127.0.0.1:8000
