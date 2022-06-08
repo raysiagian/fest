@@ -23,7 +23,7 @@ Cara penggunaan Website Laravel Festival:
 	 composer update --ignore-platform-reqs
     </li>
     <li>
-	 cp. env.example .env
+	 cp .env.example .env
     </li>
     <li>
 	 php artisan key:generate
