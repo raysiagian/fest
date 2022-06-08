@@ -23,7 +23,7 @@ Cara penggunaan Website Laravel Festival:
 	 composer update --ignore-platform-reqs
     </li>
     <li>
-	 cp .env.example .env
+	 cp .env.example .env (buka file env lalu ubah nama database sesuai keinginan anda. Pada line terakhir didalam file .env tekan enter lalu tambah line ini "FILESYSTEM_DRIVER=public")
     </li>
     <li>
 	 php artisan key:generate
