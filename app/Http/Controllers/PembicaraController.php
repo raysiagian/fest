@@ -48,8 +48,8 @@ class PembicaraController extends Controller
                 $validateData['image'] = $request->file('image')->store('content-images');
             }
            
-            $validateData['description'] = (strip_tags($request->description));
-    
+         /*    $validateData['description'] = (strip_tags($request->description));
+     */
     
           Pembicara::create($validateData);
     
@@ -97,8 +97,8 @@ class PembicaraController extends Controller
             'description' => 'required'
             ]);
     
-            $validateData['description'] = (strip_tags($request->description));
-
+      /*       $validateData['description'] = (strip_tags($request->description));
+ */
         $pembicara = Pembicara::find($id);
         $pembicara->name = $validateData['name'];
         $pembicara->description = $validateData['description'];

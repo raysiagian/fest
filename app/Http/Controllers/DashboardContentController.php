@@ -115,7 +115,7 @@ class DashboardContentController extends Controller
             'description' => 'required'
             ]);
     
-            $validateData['description'] = (strip_tags($request->description));
+          /*   $validateData['description'] = (strip_tags($request->description)); */
 
         $content = Content::find($id);
         $content->title = $validateData['title'];

@@ -24,7 +24,7 @@
               <tr>
                 <td> {{$item['name']}}</td>
                 <td> {{$item['date']}}</td>
-                <td> {{$item['description']}}</td>
+                <td> {!!$item['description']!!}</td>
               </tr>
             </tbody>
           </table>

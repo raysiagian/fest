@@ -21,7 +21,7 @@
         @foreach ($pembicara as $key => $item)
         <div class="col-4">
          <div class="card-deck">
-           <div class="card">
+           <div class="card mb-3">
             <img class="card-img-top" src="{{asset('storage/' . $item->image)}}">
             <div class="card-body">
               <h5 class="card-title">{{$item['name']}}</h5>

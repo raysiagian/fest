@@ -42,8 +42,8 @@ class JadwalController extends Controller
             'description' => 'required'
             ]);
            
-            $validateData['description'] = (strip_tags($request->description));
-    
+         /*    $validateData['description'] = (strip_tags($request->description));
+     */
     
           Jadwal::create($validateData);
     
@@ -91,8 +91,8 @@ class JadwalController extends Controller
             'description' => 'required'
             ]);
     
-            $validateData['description'] = (strip_tags($request->description));
-
+            /* $validateData['description'] = (strip_tags($request->description));
+ */
         $jadwal = Jadwal::find($id);
         $jadwal->name = $validateData['name'];
         $jadwal->date = $validateData['date'];
