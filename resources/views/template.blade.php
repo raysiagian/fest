@@ -39,6 +39,9 @@
                             <li class="nav-item">
                                 <a href="{{route('pembicara.index')}}" class="nav-link">Data Pembicara</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{route('jadwal.index')}}" class="nav-link">Data Jadwal</a>
+                            </li>
                         @endcan
                         @can('role','admin')
                           {{--   <li class="nav-item">

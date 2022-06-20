@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContentController;
 use App\Models\Pembicara;
+use App\Models\Jadwal;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,8 @@ Route::group([
         Route::view('/','dashboard')->name('dashboard');
         Route::resource('/post' ,  DashboardContentController::class)->middleware('can:role,"admin","editor"');
         Route::resource('/pembicara' ,  PembicaraController::class)->middleware('can:role,"admin","editor"');
+        Route::resource('/jadwal' ,  JadwalController::class)->middleware('can:role,"admin","editor"');
+
 
         
         Route::view('/admin','data-admin')->name('admin')->middleware(['can:role', 'admin','editor']);
@@ -66,6 +69,12 @@ Route::get('/', function () {
     return view('pembicara',[
       "tittle" => "Pembicara",
       "pembicara" => Pembicara::all()
+    ]);
+  });
+  Route::get('/jadwal', function () {
+    return view('jadwal',[
+      "tittle" => "Jadwal",
+      "jadwal" => Jadwal::all()
     ]);
   });
   

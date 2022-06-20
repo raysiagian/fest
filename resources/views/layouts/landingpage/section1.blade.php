@@ -39,6 +39,12 @@
                 <p>List Pembicara yang akan tampil dalam Festival Literasi.</p>
               </div>
             </div>
+            <div class="item">
+              <div class="down-content">
+                <a class="text-reset" href="/jadwal"><h4 class="mb-5">Jadwal</h4></a>
+                <p>List Jadwal yang tidak ingin kamu lewatkan dalam Event Festival Literasi.</p>
+              </div>
+            </div>
             
             <div class="item">
               <div class="down-content">
